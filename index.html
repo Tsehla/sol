@@ -175,7 +175,7 @@
                     
                 </div>
                     <div id='' style='border-top:solid 5px white;border-bottom:solid 5px white ' class='w3-highway-green'>
-                            <p class='w3-margin'><b>Contact us</b></p>
+                            <p class='w3-margin'><b id='contact_us_header'>Contact us</b></p>
                             <!--
                                                             <input type='text' placeholder='Name'class='form-control'>
                             <input type='text' placeholder="Email" class='form-control'>
@@ -303,9 +303,15 @@
          
         }
         //internal routing
-       if(window.location.path == contact){
-            view_toggle("contact");
-       }
+        var current_url = window.location.pathname;
+
+        if(current_url.search('contact') !== -1{//message send acceptance routing
+            view_toggle("contact_email");
+            document.getElementById('contact_us_header').innerHTML='Message has been sent';
+            document.getElementById('contact_us_header').style.color='blue';
+            return;
+        });
+
         </script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
