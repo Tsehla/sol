@@ -303,17 +303,23 @@
          
         }
         //internal routing
-        var url = window.location.pathname;
-        var current_url = url.toString;
-        console.log(current_url);
+        $(document).ready(mail_sent_routing);
 
-        if(current_url.search('contact_email') != -1){//message send acceptance routing
-            alert('did it');
-            view_toggle("contact");
-            document.getElementById('contact_us_header').innerHTML='Message has been sent';
-            document.getElementById('contact_us_header').style.color='blue';
+        function mail_sent_routing(){
+
+        
+            var url = window.location.pathname;
+            var current_url = url.toString;
+            console.log(current_url);
             
-        };
+            if(current_url.search('contact_email') != -1){//message send acceptance routing
+                alert('did it');
+                view_toggle("contact");
+                document.getElementById('contact_us_header').innerHTML='Message has been sent';
+                document.getElementById('contact_us_header').style.color='blue';
+                
+            }
+        }
 
         </script>
 
