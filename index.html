@@ -307,12 +307,9 @@
 
         function mail_sent_routing(){
 
-        
-            var url = window.location.pathname;
-            var url_contain = current_url.search('contact_email')
-            
-            if( url_contain != -1){//message send acceptance routing
-                
+           // var current_url = 'http://schooloflife.africa/?contact_email';
+            var current_url = window.location.pathname;
+            if(current_url.search('contact_email') !== -1){//message send acceptance routing
                 view_toggle("contact");
                 document.getElementById('contact_us_header').innerHTML='Message has been sent';
                 document.getElementById('contact_us_header').style.color='blue';
