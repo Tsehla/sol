@@ -309,11 +309,10 @@
 
         
             var url = window.location.pathname;
-            var current_url = url.toString;
-            console.log(current_url);
+            var url_contain = current_url.search('contact_email')
             
-            if(current_url.search('contact_email') != -1){//message send acceptance routing
-                alert('did it');
+            if( url_contain != -1){//message send acceptance routing
+                
                 view_toggle("contact");
                 document.getElementById('contact_us_header').innerHTML='Message has been sent';
                 document.getElementById('contact_us_header').style.color='blue';
