@@ -1,0 +1,269 @@
+<html>
+    <head>
+        <title>School Of Life</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2018.css">
+
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+        
+        <style type="text/css">
+            /* navi on load */
+            #home_container {
+                display:block;
+            }
+            #about_container {
+                display:none;
+            }
+            #contact_container {
+                display:none;
+            }
+            #subject_container {
+                display:none;
+            }
+
+
+            {border:1px solid blue;}
+            .fa_size{font-size: 50px;
+                        margin-top: 2vh;
+            }
+
+
+            .bxshadow{box-shadow:1px 0px #888888;}
+            
+        </style>
+
+</head>
+    <body>
+       <div id='' style='width:100vw; height: auto;'><!-- Main containers -->  
+
+        <!-- Navi column -->
+        <div id='' class='w3-col s3 m2 l1' style="height: 99vh;display: inline-block;text-align: center;font-size:13px">
+            <div class='w3-button bxshadow' style='height:Calc(100vh/4);box-shadow:0px 0px;' id='home_navi' onclick='view_toggle("home")'><i class="fa fa-home  fa_size" ></i><br>Home</div>
+            <div class="w3-button w3-border-top bxshadow" style='height:Calc(100vh/4)' id='about_navi' onclick='view_toggle("about")'><i class="fa fa-users fa_size" style='font-size:43px' ></i><br>About</div>
+            <div class="w3-button w3-border-top bxshadow" style='height:Calc(100vh/4)' id='contact_navi' onclick='view_toggle("contact")'><i class='fa fa-phone fa_size' ></i><br>Contact</div>
+            <div class="w3-button w3-border-top bxshadow" style='height:Calc(100vh/4)' id='subject_navi' onclick='view_toggle("subject")'><i class='fa fa-book fa_size' ></i><br>Subject</div>
+
+        </div>
+        <!-- body contents-->
+        <div id='' class='w3-col s9 m10' style="display:inline-block;height: auto;">
+            <!-- home -->
+            <div id='home_container' style='width: 100%; height:auto' class='w3-highway-green'>
+                <!-- home -> hero image -->
+                <img src="images/background/2.webp" style="width:100%;"><!--  background-image: url('images/background/1.webp');background-size:contain -->
+                <!-- title && Logo -->
+                <div style='width: 100%;height: 15vh;border-top:solid 5px white ' class='w3-border-top '>
+                    <h1 style="font-family: 'Special Elite', cursive;" class='w3-highway-green w3-block' style="height:10vh"><img src='images/logo/2.webp' style='width:auto;height:10vh'>S<span style='font-size: 12px'><sub>chool</sub> </span>O<span style='font-size: 12px'><sub>f</sub> </span>L<span style='font-size: 12px'><sub>ife</sub></span></h1>
+                </div>
+                <!-- home -> intro -->
+                <p style='position: relative;top:-25vh; left:0vw;text-shadow:2px 1px black;color:whitesmoke;width: auto;' class='w3-margin'>
+                   <b> We don't teach, we empower you to live a fulfiling life the next day.</b>
+                </p>
+
+                <div id='' style='position: relative;top:-15vh;border-top:solid 5px white;border-bottom:solid 5px white ' class='w3-highway-green'>
+                    <p class='w3-margin'><b>SUBJECTS</b></p>
+                    <!-- gallery images -->
+                    <div id='' style='width: 37vw;height: 15vh;background-image:url("images/background/1.webp");background-size: 37vw 15vh;text-align: center;line-height: 15vh;vertical-align: middle;display: inline-block' class=''>
+                        <p style='text-shadow:2px 1px black;color:white'>Hand craft</p>
+                    </div>
+
+                    <div id='' style='width: 37vw;height: 15vh;background-image:url("images/background/2.webp");background-size: 37vw 15vh;text-align: center;line-height: 15vh;vertical-align: middle;display: inline-block' class=''>
+                        <p style='text-shadow:2px 1px black;color:white'>Decoratives</p>
+                    </div>
+
+                    <div id='' style='width: 37vw;height: 15vh;background-image:url("images/background/3.webp");background-size: 37vw 15vh;text-align: center;line-height: 15vh;vertical-align: middle;display: inline-block' class=''>
+                        <p style='text-shadow:2px 1px black;color:white'>Consumable</p>
+                    </div>
+
+                    <div id='' style='width: 37vw;height: 15vh;background-image:url("images/background/4.webp");background-size: 37vw 15vh;text-align: center;line-height: 15vh;vertical-align: middle;display: inline-block' class=''>
+                        <p style='text-shadow:2px 1px black;color:white'>Repairs</p>
+                    </div>
+
+                    <div id='' style='width: 37vw;height: 15vh;background-image:url("images/background/5.webp");background-size: 37vw 15vh;text-align: center;line-height: 15vh;vertical-align: middle;display: inline-block' class=''>
+                        <p style='text-shadow:2px 1px black;color:white'>Productions</p>
+                    </div>
+                    
+                    <div id='' style='width: 37vw;height: 15vh;background-image:url("images/background/6.webp");background-size: 37vw 15vh;text-align: center;line-height: 15vh;vertical-align: middle;display: inline-block' class=''>
+                        <p style='text-shadow:2px 1px black;color:white'>Art</p>
+                    </div>
+                    
+                    <button class='btn btn-primary w3-margin-top w3-block'>View More</button>
+
+                </div>
+                  <!-- footer -->
+                  <div id='' style='position: relative; top:-10vh;color:white;text-align:center'>
+                        <p>
+                            All rights reserved 2018<br >
+                            <sub style="font-size:8px;">SOL is a division of NCORP</sub>
+                        </p>
+    
+                    </div>
+
+
+            </div>
+
+            <!-- about us -->
+            <div id='about_container'>
+                  <!-- title && Logo -->
+                  <div style='width: 100%;height: 15vh;border-top:solid 5px white ' class='w3-border-top '>
+                        <h1 style="font-family: 'Special Elite', cursive;" class='w3-highway-green w3-block' style="height:10vh"><img src='images/logo/2.webp' style='width:auto;height:10vh'>S<span style='font-size: 12px'><sub>chool</sub> </span>O<span style='font-size: 12px'><sub>f</sub> </span>L<span style='font-size: 12px'><sub>ife</sub></span></h1>
+                    </div>
+                    <div id='' style='border-top:solid 5px white;border-bottom:solid 5px white ' class='w3-highway-green'>
+                            <p class='w3-margin'><b>About us</b></p>
+                            <p class='w3-margin'> S.O.L is an organisation started to empower people by directly giving them skills in a shortest time possible that will allow them to start doing things for themselves, be it opening your craft shop or learning something new.
+                              </p>
+                                <br/>
+                                <hr>
+                            <p class='w3-margin'>SOL is available to anyone that has something to gain from its offerings, but it primary target young people as it believes that empowering our young at their growing age, will create a better future for all us.
+                              </p>
+                                <br/>
+                                <hr>
+                            <p class='w3-margin'>SOL is not a govenment organisation nor is it affilliated with any government instituation, but we are allways looking for companies private or public big or small and indiviaduals who share our vision and mission to work with us.
+                              </p>
+                                <br />
+                                <hr>
+                            <p class='w3-margin'>Please do reach us on our social media platform for anything related to our offerings :
+                                <i class='fa fa-facebook'></i>
+                        
+                            </p>
+
+                            <!-- footer -->
+                            <div id='' style='color:white;text-align:center;' class='w3-margin'>
+                                    <p style='color:white;text-align:center;' >
+                                        All rights reserved 2018<br >
+                                        <sub style="font-size:8px;">SOL is a division of NCORP</sub>
+                                    </p>
+                
+                            </div>
+                    </div>
+                
+
+            </div>
+
+            <!-- contact us -->
+            <div id='contact_container'>
+                  <!-- title && Logo -->
+                  <div style='width: 100%;height: 15vh;border-top:solid 5px white ' class='w3-border-top '>
+                        <h1 style="font-family: 'Special Elite', cursive;" class='w3-highway-green w3-block' style="height:10vh"><img src='images/logo/2.webp' style='width:auto;height:10vh'>S<span style='font-size: 12px'><sub>chool</sub> </span>O<span style='font-size: 12px'><sub>f</sub> </span>L<span style='font-size: 12px'><sub>ife</sub></span></h1>
+                    </div>
+                    <div id='' style='border-top:solid 5px white;border-bottom:solid 5px white ' class='w3-highway-green'>
+                            <p class='w3-margin'><b>Contact us</b></p>
+                            <input type='text' placeholder='Name'class='form-control'>
+                            <input type='text' placeholder="Email" class='form-control'>
+                            <input type='number' placeholder="Cell Number" class='form-control'>
+                            <input type='tex-area' placeholder="Message" class='form-control'>
+                            <br>
+                            <button class='w3-margin-top btn btn-primary w3-block'>Send</button>
+                            <br/>
+                            <br/>
+                            <p><b>Send us Email on :</b></p>
+                            <p>SchoolOfLife@gmail.com</p>
+                            <p><b>Visit our page :</b> <i class='fa fa-facebook'></i></p>
+                            <br />
+                            <br />
+                            <!-- footer -->
+                            <div id='' style='color:white;text-align:center;' class='w3-margin'>
+                                    <p style='color:white;text-align:center;' >
+                                        All rights reserved 2018<br >
+                                        <sub style="font-size:8px;">SOL is a division of NCORP</sub>
+                                    </p>
+                
+                            </div>
+                            
+                    </div>
+
+            </div>
+
+            <!-- subject -->
+            <div id='subject_container' style="width:auto;height:auto">
+                  <!-- title && Logo -->
+                  <div style='width: 100%;height: 15vh;border-top:solid 5px white ' class='w3-border-bottom '>
+                        <h1 style="font-family: 'Special Elite', cursive;" class='w3-highway-green w3-block' style="height:10vh"><img src='images/logo/2.webp' style='width:auto;height:10vh'>S<span style='font-size: 12px'><sub>chool</sub> </span>O<span style='font-size: 12px'><sub>f</sub> </span>L<span style='font-size: 12px'><sub>ife</sub></span></h1>
+                    </div>
+
+                <div id='' style='border-top:solid 5px white;border-bottom:solid 5px white ' class='w3-highway-green'>
+                    <p class='w3-margin'><b>SUBJECTS</b></p>
+                    <!-- gallery images -->
+                    <div id='' style='width: 37vw;height: 15vh;background-image:url("images/background/1.webp");background-size: 37vw 15vh;text-align: center;line-height: 15vh;vertical-align: middle;display: inline-block' class=''>
+                        <p style='text-shadow:2px 1px black;color:white'>Hand craft</p>
+                    </div>
+
+                    <div id='' style='width: 37vw;height: 15vh;background-image:url("images/background/2.webp");background-size: 37vw 15vh;text-align: center;line-height: 15vh;vertical-align: middle;display: inline-block' class=''>
+                        <p style='text-shadow:2px 1px black;color:white'>Decoratives</p>
+                    </div>
+
+                    <div id='' style='width: 37vw;height: 15vh;background-image:url("images/background/3.webp");background-size: 37vw 15vh;text-align: center;line-height: 15vh;vertical-align: middle;display: inline-block' class=''>
+                        <p style='text-shadow:2px 1px black;color:white'>Consumable</p>
+                    </div>
+
+                    <div id='' style='width: 37vw;height: 15vh;background-image:url("images/background/4.webp");background-size: 37vw 15vh;text-align: center;line-height: 15vh;vertical-align: middle;display: inline-block' class=''>
+                        <p style='text-shadow:2px 1px black;color:white'>Repairs</p>
+                    </div>
+
+                    <div id='' style='width: 37vw;height: 15vh;background-image:url("images/background/5.webp");background-size: 37vw 15vh;text-align: center;line-height: 15vh;vertical-align: middle;display: inline-block' class=''>
+                        <p style='text-shadow:2px 1px black;color:white'>Productions</p>
+                    </div>
+                    
+                    <div id='' style='width: 37vw;height: 15vh;background-image:url("images/background/6.webp");background-size: 37vw 15vh;text-align: center;line-height: 15vh;vertical-align: middle;display: inline-block' class=''>
+                        <p style='text-shadow:2px 1px black;color:white'>Art</p>
+                    </div>
+                    
+          
+
+
+                <!-- footer -->
+                <div id='' style='color:white;text-align:center;' class='w3-margin'>
+                        <p style='color:white;text-align:center;' >
+                            All rights reserved 2018<br >
+                            <sub style="font-size:8px;">SOL is a division of NCORP</sub>
+                        </p>
+    
+                </div>
+
+                </div>
+
+                 
+            </div>
+
+              
+
+
+        </div>
+
+
+       </div>   
+
+        <script type='text/javascript'>//+++++Main script++++++
+        //hide/navigation
+        
+        function view_toggle(id,caller){
+            //hide everything
+            document.getElementById('home_container').style.display='none';
+            document.getElementById('home_navi').style.boxShadow='1px 0px #888888';
+
+            document.getElementById('about_container').style.display='none';
+            document.getElementById('about_navi').style.boxShadow='1px 0px #888888';
+
+            document.getElementById('contact_container').style.display='none';
+            document.getElementById('contact_navi').style.boxShadow='1px 0px #888888';
+
+            document.getElementById('subject_container').style.display='none';
+            document.getElementById('subject_navi').style.boxShadow='1px 0px #888888';
+
+            //show the one pressing comes from
+            document.getElementById(id+'_container').style.display='block';
+            document.getElementById(id+'_navi').style.boxShadow='0px 0px';
+         
+        }
+
+        
+        </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </body>
+
+
+</html>
