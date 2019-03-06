@@ -57,7 +57,7 @@
             <!-- home -->
             <div id='home_container' style='width: 100%; height:auto' class='w3-highway-green'>
                 <!-- home -> hero image -->
-                <div style='width: 100%;height: auto;'>
+                <div id='home_hero_container' style='width: 100%;height: auto;'>
                     <img src="images/background/2.webp" style="width:100%;"><!--  background-image: url('images/background/1.webp');background-size:contain -->
                    
                     <p style='position: absolute;top:21vw; left:24vw;text-shadow:2px 1px black;color:whitesmoke;width: auto;' class='w3-margin'>
@@ -302,6 +302,7 @@
            // document.getElementById(id+'_navi').style.borderColor='red';
          
         }
+
         //internal routing
         $(document).ready(mail_sent_routing);
 
@@ -316,6 +317,20 @@
                 
             }
         }
+      var image_number_tracker = 1;
+      setInterval(function(){
+                
+                document.getElementById('home_hero_container').innerHTML = `<img src="images/background/`+ image_number_tracker +`.webp" style="width:100%;">
+                   <p style='position: absolute;top:21vw; left:24vw;text-shadow:2px 1px black;color:whitesmoke;width: auto;' class='w3-margin'>
+                       <b> We don't teach, we empower you to live a fulfiling life the next day.</b>
+                   </p>`;
+
+                   image_number_tracker = image_number_tracker + 1;
+                   
+                   if(image_number_tracker == 7){
+                    image_number_tracker = 1;
+                   }
+        }, 5000);
 
         </script>
 
