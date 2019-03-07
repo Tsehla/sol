@@ -37,6 +37,24 @@
 
 
             .bxshadow{box-shadow:1px 0px #888888;}
+
+            /* screen size control */
+            @media only screen and (min-width: 320px) and (max-width: 479px){ 
+                body{font-size:15px;}
+             }
+
+            @media only screen and (min-width: 480px) and (max-width: 767px){ 
+                body{font-size:25px;}
+            }
+
+            @media only screen and (min-width: 768px) and (max-width: 991px){ 
+                body{font-size:25px;}
+  
+            }
+
+            @media only screen and (min-width: 992px) and (max-width: 1999px){ 
+                 body{font-size:25px;}
+            }
             
         </style>
 
@@ -45,7 +63,7 @@
        <div id='' style='width:100vw; height: auto;'><!-- Main containers -->  
 
         <!-- Navi column -->
-        <div id='' class='w3-col s3 m2 l1' style="height: 99vh;display: inline-block;text-align: center;font-size:35px;" >
+        <div id='' class='w3-col s3 m2 l1 font_media' style="height: 99vh;display: inline-block;text-align: center;font-size:20px;" >
             <div class='w3-col s3 m2 l1' id='height:99vh' style='position:fixed; top:0px;left:0px' >
                 <div class='w3-button w3-border bxshadow w3-block' style='height:Calc(100vh/4);box-shadow:1px 0px red;' id='home_navi' onclick='view_toggle("home")'><i class="fa fa-home  fa_size" ></i><br>Home</div>
                 <div class="w3-button w3-border bxshadow w3-block" style='height:Calc(100vh/4)' id='about_navi' onclick='view_toggle("about")'><i class="fa fa-users fa_size" style='font-size:43px' ></i><br>About</div>
